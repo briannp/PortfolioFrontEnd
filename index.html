@@ -2,69 +2,85 @@
 <html lang="en">
 
 <head>
+
+    <!-- Meta's-->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primer Pagina Web</title>
+    
+    <!-- CSS y Bootstrap-->
+
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- Fuentes -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-
-    <header>
-        <h1 class="title">Portfolio BP</h1>
-    </header>
-    
-    <nav>
-        <ul>
-            <li>Quien Soy</li>
-            <li>Trabajos</li>
-            <li>Ingresar</li>
-            <li>Contacto</li>
-        </ul>
-    </nav>
-
-    <form action="/login" method="post">
-        <input type="text" name="username" placeholder="Usuario" required>
-        <input type="password" name="password" placeholder="Contraseña" required>
-        <button type="submit">Entrar</button>
-    </form>
-
-    <aside>
-        <h1>Bienvenido!</h1>
-
-        <p>Mi nombre es Brian Peralta, tengo 32 años y este es mi primer Portfolio, espero sea de su agrado!</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <header>
+                    <h1 class="title">Portfolio BP</h1>
+                </header>
+            
+                <nav>
+                    <ul>
+                        <li>Quien Soy</li>
+                        <li>Trabajos</li>
+                        <li>Ingresar</li>
+                        <li>Contacto</li>
+                    </ul>
+                </nav>
         
-
-        Puedes encontrarme en:
-
-        <a href="mailto:brian.np@hotmail.com">Mail</a>
-        <a href="https://www.instagram.com/briannp">Instagram</a>
-    </aside>
-
-    <section>
-        <div class="img">
-            <img class="rounded" src="./src/code.jpg" alt="Codigo">
-        </div>
-    </section>
-
-    <main>
-        <section>
-
-            <article>
-                <p>Articulo N°1 informacion adicional: <br>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt sit tempora in harum repellendus, facilis impedit error ad. Quae, veritatis ullam commodi dolores dicta sequi animi ut officia, laborum in quaerat ipsa quis consectetur mollitia vero eius unde voluptatibus nihil!
-                </p>
-            </article>
-
-        </section>
+                <form action="/login" method="post">
+                    <input type="text" name="username" placeholder="Usuario" required>
+                    <input type="password" name="password" placeholder="Contraseña" required>
+                    <button type="submit">Entrar</button>
+                </form>
         
-
-    </main>
-
+                <aside>
+                    <h1>Bienvenido!</h1>
+        
+                    <p>Mi nombre es Brian Peralta, tengo 32 años y este es mi primer Portfolio, espero sea de su agrado!</p>
+                    
+        
+                    Puedes encontrarme en:
+        
+                    <a href="mailto:brian.np@hotmail.com">Mail</a>
+                    <a href="https://www.instagram.com/briannp">Instagram</a>
+                </aside>
+            </div>
+        
+            <div class="col">
+                    <div>
+                        <img class="img" src="./src/code.jpg" alt="Codigo">
+                    </div>
+            </div>
+        
+            <div class="col">
+                <main>
+                    <section>
+        
+                        <article>
+                            <p>Articulo N°1 informacion adicional: <br>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt sit tempora in harum repellendus, facilis impedit error ad. Quae, veritatis ullam commodi dolores dicta sequi animi ut officia, laborum in quaerat ipsa quis consectetur mollitia vero eius unde voluptatibus nihil!
+                            </p>
+                        </article>
+        
+                    </section>
+                </main>
+            </div>
+        </div>  
+        
+    </div>
 </body>
 
 </html>
