@@ -24,7 +24,7 @@
 
 </head>
 
-<nav class="navbar sticky-top bg-light fixed-top">
+<nav class="navbar sticky-top fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Portfolio BP</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -59,22 +59,32 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <aside>
-                    <img class="redondo" src="./src/photobp2.jpeg" alt="Brian">
+                <div class="left-container">
+                    <div>
+                        <img class="redondo" src="./src/photobp2.jpeg" alt="Brian">
+                    </div>
+
                     
-                    <h1>Bienvenido!</h1>
+                    
+                    <div>
+                        <h1>Bienvenido!</h1>
         
-                    <p>Mi nombre es Brian Peralta, tengo 32 años y este es mi primer Portfolio, espero sea de su agrado!</p>
+                        <p>Mi nombre es Brian Peralta, tengo 32 años y este es mi primer Portfolio, espero sea de su agrado!</p>
+                    </div>
+                    
                     
                     <div>
                         <form action="/login" method="post">
-                            <input type="text" name="username" placeholder="Usuario" required>
-                            <input type="password" name="password" placeholder="Contraseña" required>
-                            <button type="submit">Entrar</button>
+                            <input class="login-input" type="text" name="username" placeholder="Usuario" required>
+                            <input class="login-input" type="password" name="password" placeholder="Contraseña" required>
+                            <button class="login-input" type="submit">Entrar</button>
                         </form>
                     </div>
-                </aside>
+                        
+                    
+                </div>
             </div>
+
         
             <div class="col">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -140,10 +150,10 @@
             </div>
         </div>  
         
-    </div>
+    
 
      
-            <footer>
+            <footer class="fixed-bottom">
                 <p>
                     <br>
                     Puedes encontrarme en:
@@ -154,7 +164,7 @@
                 </p>
         
             </footer>
-       
+ </div>
 </body>
 
 </html>
